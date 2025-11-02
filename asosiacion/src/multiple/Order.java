@@ -1,3 +1,5 @@
+package multiple;
+
 public class Order {
     private String date;
     private Client client;
@@ -5,25 +7,20 @@ public class Order {
     public Order(String date){
         this.date = date;
     }
-
-    public setClient(Client c){
+    public void setClient(Client c){
         this.client = c;
     }
 
     public String getClient(){
-        return client.getName();
-
+        return client.getName(); 
     }
 
     public String getDate(){
         return this.date;
+
     }
 
-    public process(){
+    public void process(){
         System.out.println("Procesando");
     }
-
-
-
-
 }
